@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 import com.abc.api.DatabaseConnect;
 
 /**
- * Servlet implementation class Stest
+ * Servlet implementation class Login
  */
 public class Stest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -79,7 +79,6 @@ public class Stest extends HttpServlet {
 		}catch(SQLException e){
 			
 		}
-		
 		
 		doGet(request, response);
 	}

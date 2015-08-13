@@ -1,23 +1,22 @@
 package com.abc.core;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class Registration
+ * Servlet implementation class CheckOut
  */
-public class Registration extends HttpServlet {
+public class CheckOut extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Registration() {
+    public CheckOut() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,20 +34,11 @@ public class Registration extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		/*Boolean check = ComputerList.insertUT("request.getParameter("user_pwd")", "request.getParameter("user_Fname")", "request.getParameter("user_Lname")");
-		  if(check){
-		  request.setAttribute("Message", "Successfully Registered");
-		  RequestDispatcher reqDispatcher = request.getRequestDispatcher("");
-		  reqDispatcher.forward(request, response);
-		  }
-		  else{
-		  request.setAttributr("ErrorMessage", "Not Registered")
-		  RequestDispatcher reqDispatcher = request.getRequestDispatcher("");
-		  reqDispatcher.forward(request, response);
-		  }
-		  */
+		HttpSession session = request.getSession();
+		/*
+		 Boolean checkout = CopmuterList.purchase();
+		 */
 		doGet(request, response);
-		
 	}
 
 }
