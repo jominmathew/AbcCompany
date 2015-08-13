@@ -47,7 +47,7 @@ public class AddToCart extends HttpServlet {
 			httpSession.setAttribute(MY_CART_LIST_NAME, new ArrayList<MyCart>());
 		}
 		
-		ArrayList<MyCart> myCartList = (MyCart)httpSession.getAttribute(MY_CART_LIST_NAME);
+		ArrayList<MyCart> myCartList = (ArrayList<MyCart>)httpSession.getAttribute(MY_CART_LIST_NAME);
 		
 		MyCart cart = new MyCart();
 		cart.setComputerId(0);
