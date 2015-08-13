@@ -7,7 +7,7 @@
 <title>Login page</title>
 </head>
 
-<% (request.getAttribute("errorMessage") != null) { %>
+<% if(request.getAttribute("errorMessage") != null) { %>
 <%= request.getAttribute("errorMessage") %>
 <%} %>
 <body>
